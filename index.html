@@ -1,19 +1,362 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Neuroo — Brain Training Games</title>
+<title>Neuroo — Brain Training Games for Memory, Focus & IQ</title>
+<meta name="description" content="Train your brain with 15 quick games across memory, focus, logic & reasoning. Follow a daily plan built for your goals, track your Brain Score, and sharpen your mind. Free on iPhone & iPad.">
+<link rel="canonical" href="https://getneuroo.com/">
+<meta name="theme-color" content="#21B057">
+<meta name="apple-itunes-app" content="app-id=6778620966">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Neuroo">
+<meta property="og:title" content="Neuroo — Brain Training Games for Memory, Focus & IQ">
+<meta property="og:description" content="15 quick games across memory, focus, logic & reasoning. A daily plan built for your goals, and a Brain Score that tracks your progress. Free on iPhone & iPad.">
+<meta property="og:url" content="https://getneuroo.com/">
+<meta property="og:image" content="https://getneuroo.com/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Neuroo — Brain Training Games for Memory, Focus & IQ">
+<meta name="twitter:description" content="15 quick games across memory, focus, logic & reasoning. Track your Brain Score. Free on iPhone & iPad.">
+<meta name="twitter:image" content="https://getneuroo.com/assets/og.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preload" as="image" href="/assets/shot-home.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Neuroo - Brain Training Games",
+  "operatingSystem": "iOS",
+  "applicationCategory": "EducationalApplication",
+  "description": "Brain training games to sharpen memory, focus and IQ. 15 quick games across memory, focus, logic and reasoning, a daily plan built for your goals, and a Brain Score that tracks progress.",
+  "image": "https://getneuroo.com/assets/icon-512.png",
+  "url": "https://getneuroo.com/",
+  "installUrl": "https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "author": { "@type": "Person", "name": "Gregory Kemper" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Neuroo free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — Neuroo is free to download and includes free games you can play every day. Neuroo Plus is an optional subscription that unlocks all 15 games, removes ads, and adds full stats and history, with a 7-day free trial." }
+    },
+    {
+      "@type": "Question",
+      "name": "What games are in Neuroo?",
+      "acceptedAnswer": { "@type": "Answer", "text": "15 games across four categories. Memory: Number Memory, Visual Memory, Verbal Memory, Card Pairs, Name Match. Focus: Go / No-Go, Color Clash, What's Missing?, Cup Shuffle. Logic: Maze, Balance, One Line. Reasoning: Codebreaker, Odd One Out, Ball Sort." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Brain Score?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Your Brain Score (out of 1000) blends four things: Consistency (showing up daily), Variety (training different skills), Volume (how much you train), and Skill (how far you push each game). It grows as your training does." }
+    },
+    {
+      "@type": "Question",
+      "name": "What devices does Neuroo support?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Neuroo is available for iPhone and iPad on the App Store." }
+    }
+  ]
+}
+</script>
+
 <style>
-:root{--g:#21B057}*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-background:linear-gradient(160deg,#21B057,#12833f);color:#fff;min-height:100vh;
-display:flex;align-items:center;justify-content:center;text-align:center;padding:24px}
-.card{max-width:520px}h1{font-size:2.6rem;font-weight:800;letter-spacing:-.02em;margin-bottom:.4rem}
-p.tag{font-size:1.15rem;opacity:.92;margin-bottom:2rem}
-a.btn{display:inline-block;background:#fff;color:#12833f;font-weight:700;
-padding:14px 28px;border-radius:14px;text-decoration:none;font-size:1.05rem;box-shadow:0 8px 24px rgba(0,0,0,.18)}
-nav{margin-top:2.5rem;font-size:.95rem;opacity:.9}nav a{color:#fff;text-decoration:underline;margin:0 10px}
-</style></head><body><div class="card">
-<h1>Neuroo</h1>
-<p class="tag">Brain training games to sharpen memory, focus &amp; IQ.</p>
-<a class="btn" href="https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966">Download on the App Store</a>
-<nav><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/support">Support</a></nav>
-</div></body></html>
+:root{
+  --g:#21B057; --g-dark:#12833f; --g-deep:#0e6e34;
+  --ink:#111827; --ink-2:#4b5563; --ink-3:#6b7280;
+  --bg:#f7f8fa; --card:#ffffff; --line:#e5e7eb;
+  --chip:#eef7f1; --radius:20px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--g-dark)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(247,248,250,.85);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:800;font-size:1.15rem;letter-spacing:-.01em}
+.brand img{width:32px;height:32px;border-radius:8px}
+.nav-links{display:flex;gap:22px;align-items:center;font-size:.95rem}
+.nav-links a{text-decoration:none;color:var(--ink-2);font-weight:500}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{background:var(--g);color:#fff !important;font-weight:700;padding:8px 16px;border-radius:12px}
+.nav-cta:hover{background:var(--g-dark)}
+@media(max-width:640px){.nav-links a:not(.nav-cta){display:none}}
+
+/* hero */
+.hero{padding:72px 0 40px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+@media(max-width:820px){.hero-grid{grid-template-columns:1fr;text-align:center}.hero-copy .badges,.hero-copy .meta{justify-content:center}}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--chip);color:var(--g-deep);font-weight:700;font-size:.85rem;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+h1{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:800;letter-spacing:-.03em;line-height:1.08;margin-bottom:18px}
+h1 .grn{color:var(--g)}
+.sub{font-size:1.15rem;color:var(--ink-2);max-width:34rem;margin-bottom:28px}
+.badges{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.appstore-btn{display:inline-flex;align-items:center;gap:11px;background:#000;color:#fff;text-decoration:none;padding:11px 20px;border-radius:13px;transition:transform .15s ease,box-shadow .15s ease;box-shadow:0 6px 18px rgba(0,0,0,.16)}
+.appstore-btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.22)}
+.appstore-btn svg{width:26px;height:26px;flex:none}
+.appstore-btn .txt{text-align:left;line-height:1.15}
+.appstore-btn .txt small{display:block;font-size:.68rem;font-weight:400;opacity:.85}
+.appstore-btn .txt span{font-size:1.15rem;font-weight:600;letter-spacing:-.01em}
+.meta{display:flex;gap:18px;margin-top:20px;color:var(--ink-3);font-size:.9rem;flex-wrap:wrap}
+.meta b{color:var(--ink)}
+
+/* phone */
+.phone{width:min(300px,78vw);margin:0 auto;border-radius:42px;padding:10px;background:#111;box-shadow:0 30px 60px rgba(17,24,39,.25),0 4px 12px rgba(17,24,39,.12)}
+.phone img{border-radius:34px}
+.phone-sm{width:min(260px,70vw)}
+.hero-grid .phone{width:min(280px,74vw)}
+.hero-grid .phone img{height:min(60vh,500px);object-fit:cover;object-position:top}
+
+/* stat strip */
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:56px 0 0}
+@media(max-width:820px){.strip{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;text-align:center}
+.stat b{display:block;font-size:1.6rem;font-weight:800;letter-spacing:-.02em;color:var(--g-dark)}
+.stat span{color:var(--ink-3);font-size:.9rem}
+
+/* sections */
+section{padding:72px 0}
+.sec-head{max-width:620px;margin:0 auto 44px;text-align:center}
+h2{font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+.sec-head p{color:var(--ink-2);font-size:1.05rem}
+
+/* feature rows */
+.feat-row{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:72px}
+.feat-row:last-child{margin-bottom:0}
+.feat-row.rev .phone{order:-1}
+@media(max-width:820px){.feat-row{grid-template-columns:1fr;gap:32px}.feat-row .phone{order:-1}}
+.feat-copy h3{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+.feat-copy p{color:var(--ink-2);margin-bottom:16px}
+.ticks{list-style:none}
+.ticks li{padding-left:30px;position:relative;margin-bottom:10px;color:var(--ink-2)}
+.ticks li::before{content:"";position:absolute;left:0;top:5px;width:18px;height:18px;border-radius:50%;background:var(--chip)}
+.ticks li::after{content:"";position:absolute;left:5px;top:9px;width:8px;height:5px;border-left:2.5px solid var(--g-dark);border-bottom:2.5px solid var(--g-dark);transform:rotate(-45deg)}
+
+/* games */
+.games{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cats{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media(max-width:720px){.cats{grid-template-columns:1fr}}
+.cat{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.cat h3{display:flex;align-items:center;gap:10px;font-size:1.1rem;font-weight:800;margin-bottom:14px}
+.dot{width:12px;height:12px;border-radius:4px;flex:none}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.9rem;font-weight:600;color:var(--ink-2)}
+
+/* faq */
+.faq{max-width:720px;margin:0 auto}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin-bottom:12px}
+summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.3rem;font-weight:400;color:var(--ink-3);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--ink-2);padding-top:10px}
+
+/* cta */
+.cta{background:linear-gradient(150deg,var(--g),var(--g-deep));border-radius:28px;padding:60px 32px;text-align:center;color:#fff}
+.cta h2{color:#fff}
+.cta p{opacity:.92;max-width:30rem;margin:0 auto 28px}
+.cta .appstore-btn{background:#fff;color:#111;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+
+/* footer */
+footer{padding:40px 0 56px;color:var(--ink-3);font-size:.9rem}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.foot nav{display:flex;gap:20px}
+.foot a{color:var(--ink-3);text-decoration:none}
+.foot a:hover{color:var(--ink)}
+
+@media (prefers-color-scheme: dark){
+  :root{--ink:#f3f4f6;--ink-2:#c4c9d2;--ink-3:#9aa1ab;--bg:#0e1113;--card:#181c1f;--line:#2a2f34;--chip:#15291d}
+  header{background:rgba(14,17,19,.8)}
+  .games{background:#131719}
+  .cat{background:#181c1f}
+  .chip{background:#131719;color:var(--ink-2)}
+  .appstore-btn{background:#fff;color:#111}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/"><img src="/assets/icon-192.png" alt="Neuroo app icon" width="32" height="32">Neuroo</a>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#games">Games</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">🧠 Daily brain training</span>
+        <h1>Brain training games to sharpen <span class="grn">memory, focus&nbsp;&amp;&nbsp;IQ</span></h1>
+        <p class="sub">15 quick, science-inspired games across memory, focus, logic and reasoning. Follow a daily plan picked for your goals and watch your Brain Score climb.</p>
+        <div class="badges">
+          <a class="appstore-btn" href="https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966" aria-label="Download Neuroo on the App Store">
+            <svg viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.7-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            <span class="txt"><small>Download on the</small><span>App Store</span></span>
+          </a>
+        </div>
+        <div class="meta"><span><b>Free</b> to download</span><span><b>15</b> games</span><span><b>iPhone</b> &amp; iPad</span></div>
+      </div>
+      <div class="phone"><img src="/assets/shot-home.png" alt="Neuroo home screen showing today's brain training plan" width="720" height="1417" fetchpriority="high"></div>
+    </div>
+
+    <div class="strip">
+      <div class="stat"><b>15</b><span>brain games</span></div>
+      <div class="stat"><b>4</b><span>skill categories</span></div>
+      <div class="stat"><b>~3 min</b><span>per daily session</span></div>
+      <div class="stat"><b>1000</b><span>Brain Score to chase</span></div>
+    </div>
+  </div>
+
+  <section id="features">
+    <div class="sec-head">
+      <h2>Training that actually fits your day</h2>
+      <p>No hour-long drills. Neuroo hands you a short plan every day, targets your weakest skills, and turns progress into a single score you'll want to beat.</p>
+    </div>
+
+    <div class="feat-row">
+      <div class="feat-copy">
+        <h3>A daily plan picked for your goals</h3>
+        <p>Every day Neuroo curates a short workout for you — a mix of games chosen around the skills you want to build, front-loading the categories you haven't trained yet.</p>
+        <ul class="ticks">
+          <li>3-game daily plan, done in minutes</li>
+          <li>Recommends what you haven't trained today</li>
+          <li>Pick up right where you left off</li>
+        </ul>
+      </div>
+      <div class="phone phone-sm"><img src="/assets/shot-home.png" alt="Daily training plan in Neuroo" width="720" height="1417" loading="lazy"></div>
+    </div>
+
+    <div class="feat-row rev">
+      <div class="feat-copy">
+        <h3>One Brain Score. Four ways to grow it.</h3>
+        <p>Your Brain Score (out of 1000) blends <b>Consistency</b>, <b>Variety</b>, <b>Volume</b> and <b>Skill</b> — so showing up daily counts just as much as high scores. Streaks, per-game bests and history keep the receipts.</p>
+        <ul class="ticks">
+          <li>See how you rank against other trainers</li>
+          <li>Per-game levels and personal bests</li>
+          <li>Day streaks that keep you honest</li>
+        </ul>
+      </div>
+      <div class="phone phone-sm"><img src="/assets/shot-stats.png" alt="Neuroo stats screen with Brain Score of 125 out of 1000" width="720" height="1468" loading="lazy"></div>
+    </div>
+
+    <div class="feat-row">
+      <div class="feat-copy">
+        <h3>Games you'll actually want to replay</h3>
+        <p>From memorizing 16-digit numbers to cracking color codes — every game takes seconds to learn, gets harder as you improve, and tracks your best level.</p>
+        <ul class="ticks">
+          <li>Adaptive difficulty that scales with you</li>
+          <li>Quick rounds built for short breaks</li>
+          <li>New personal bests to chase in every game</li>
+        </ul>
+      </div>
+      <div class="phone phone-sm"><img src="/assets/shot-game.png" alt="Logic and reasoning games in Neuroo including Maze, Balance and Codebreaker" width="720" height="1294" loading="lazy"></div>
+    </div>
+  </section>
+</div>
+
+  <section class="games" id="games">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>15 games. 4 skills. Zero filler.</h2>
+        <p>Each game targets one core cognitive skill — memory, focus, logic or reasoning — so your training stays balanced.</p>
+      </div>
+      <div class="cats">
+        <div class="cat">
+          <h3><span class="dot" style="background:#8b5cf6"></span>Memory</h3>
+          <div class="chips"><span class="chip">Number Memory</span><span class="chip">Visual Memory</span><span class="chip">Verbal Memory</span><span class="chip">Card Pairs</span><span class="chip">Name Match</span></div>
+        </div>
+        <div class="cat">
+          <h3><span class="dot" style="background:#f59e0b"></span>Focus</h3>
+          <div class="chips"><span class="chip">Go / No-Go</span><span class="chip">Color Clash</span><span class="chip">What's Missing?</span><span class="chip">Cup Shuffle</span></div>
+        </div>
+        <div class="cat">
+          <h3><span class="dot" style="background:#3b82f6"></span>Logic</h3>
+          <div class="chips"><span class="chip">Maze</span><span class="chip">Balance</span><span class="chip">One Line</span></div>
+        </div>
+        <div class="cat">
+          <h3><span class="dot" style="background:#ec4899"></span>Reasoning</h3>
+          <div class="chips"><span class="chip">Codebreaker</span><span class="chip">Odd One Out</span><span class="chip">Ball Sort</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div class="wrap">
+  <section id="faq">
+    <div class="sec-head"><h2>Questions, answered</h2></div>
+    <div class="faq">
+      <details>
+        <summary>Is Neuroo free?</summary>
+        <p>Yes — Neuroo is free to download and includes free games you can play every day. Neuroo Plus is an optional subscription that unlocks all 15 games, removes ads, and adds full stats &amp; history — with a 7-day free trial.</p>
+      </details>
+      <details>
+        <summary>How long does a session take?</summary>
+        <p>A daily plan is 3 short games — most people finish in a few minutes. Every game is built for quick rounds, so it fits a coffee break.</p>
+      </details>
+      <details>
+        <summary>What is the Brain Score?</summary>
+        <p>A single number out of 1000 that blends Consistency (showing up daily), Variety (training different skills), Volume (how much you train) and Skill (how far you push each game). It rewards steady training, not just one lucky high score.</p>
+      </details>
+      <details>
+        <summary>What devices does Neuroo support?</summary>
+        <p>Neuroo is available for iPhone and iPad on the <a href="https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966">App Store</a>.</p>
+      </details>
+      <details>
+        <summary>Does brain training make me smarter?</summary>
+        <p>Neuroo games are designed to challenge memory, attention, logic and reasoning in short, progressively harder rounds — and to make daily mental exercise a habit you keep. Neuroo is a training and entertainment app, not a medical device.</p>
+      </details>
+    </div>
+  </section>
+
+  <section>
+    <div class="cta">
+      <h2>Your brain. Three minutes a day.</h2>
+      <p>Download Neuroo free and see your Brain Score after your first session.</p>
+      <a class="appstore-btn" href="https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966" aria-label="Download Neuroo on the App Store">
+        <svg viewBox="0 0 384 512" fill="currentColor" aria-hidden="true" width="26" height="26"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.7-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+        <span class="txt"><small>Download on the</small><span>App Store</span></span>
+      </a>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 Neuroo</span>
+    <nav>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      <a href="/support">Support</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
