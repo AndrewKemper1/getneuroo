@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Free Memory Test — How Many Digits Can You Remember?</title>
-<meta name="description" content="Take a free number memory test right in your browser. See a number, memorize it, type it back — each round adds a digit. Most people top out around 7. How far can you go?">
+<title>Number Memory Test — Free Digit Span Test Online</title>
+<meta name="description" content="Free number memory test. See a number, memorize it, type it back — each round adds a digit. The average adult holds about 7. Find your digit span in 60 seconds, no signup.">
 <link rel="canonical" href="https://getneuroo.com/memory-test">
 <meta name="theme-color" content="#21B057">
 <meta name="apple-itunes-app" content="app-id=6778620966">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Neuroo">
-<meta property="og:title" content="Free Memory Test — How Many Digits Can You Remember?">
+<meta property="og:title" content="Number Memory Test — Free Digit Span Test Online">
 <meta property="og:description" content="See a number. Memorize it. Type it back. Each round adds a digit — most people top out around 7. How far can you go?">
 <meta property="og:url" content="https://getneuroo.com/memory-test">
 <meta property="og:image" content="https://getneuroo.com/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Free Memory Test — How Many Digits Can You Remember?">
+<meta name="twitter:title" content="Number Memory Test — Free Digit Span Test Online">
 <meta name="twitter:image" content="https://getneuroo.com/assets/og.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -27,6 +27,64 @@
   "url": "https://getneuroo.com/memory-test",
   "description": "A free digit-span memory test you can take in your browser. Memorize a number, type it back, and see how many digits you can hold.",
   "isPartOf": { "@type": "WebSite", "name": "Neuroo", "url": "https://getneuroo.com/" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a number memory test?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A number memory test measures your digit span \u2014 how many digits you can hold in short-term memory at once and repeat back correctly. A number appears briefly, disappears, and you type it from memory. Each round adds one more digit, so the test finds your ceiling rather than giving a pass or fail."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a good score on a number memory test?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most adults land between 6 and 8 digits, which is the normal range. Five or fewer is below typical and is often distraction rather than memory. Nine to eleven is above typical. Twelve or more is unusual and almost always reflects a learned chunking strategy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the average digit span?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "About seven. George Miller's 1956 paper The Magical Number Seven, Plus or Minus Two put the span of immediate memory at roughly seven items for most adults, with normal variation of about two either side."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I improve my number memory?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chunking is the biggest lever: group digits into twos or threes the way you say a phone number aloud, which turns seven separate items into three. Beyond that, digit span responds to repetition, and gains show up fastest on the task you actually practise, so a few minutes daily beats an hour once a week."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does digit span measure IQ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not on its own. Digit span is part of standardised IQ batteries such as the Wechsler Adult Intelligence Scale, but it captures one narrow ability \u2014 short-term retention \u2014 rather than general intelligence. No single online test can give you an IQ."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Neuroo", "item": "https://getneuroo.com" },
+    { "@type": "ListItem", "position": 2, "name": "Number Memory Test", "item": "https://getneuroo.com/memory-test" }
+  ]
 }
 </script>
 <style>
@@ -80,7 +138,9 @@ input[type=text]:focus{border-color:var(--g)}
 /* info */
 .info{max-width:640px;margin:56px auto 0}
 .info h2{font-size:1.4rem;font-weight:800;letter-spacing:-.02em;margin:32px 0 10px}
-.info p{color:var(--ink-2)}
+.info p{color:var(--ink-2);margin-bottom:14px}
+.info ul{color:var(--ink-2);margin:10px 0 0 20px}
+.info li{margin-bottom:8px}
 footer{padding:32px 0 48px;color:var(--ink-3);font-size:.9rem}
 .foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .foot nav{display:flex;gap:20px}
@@ -105,7 +165,8 @@ footer{padding:32px 0 48px;color:var(--ink-3);font-size:.9rem}
 </header>
 
 <main class="wrap">
-  <h1>How many digits can you remember?</h1>
+  <h1>Number Memory Test</h1>
+  <p class="lede" style="font-weight:700;color:var(--ink)">How many digits can you remember?</p>
   <p class="lede">See a number. Memorize it. Type it back. Every round adds a digit — most people top out around 7. One miss and it's over.</p>
 
   <div class="stage" id="stage">
@@ -153,10 +214,32 @@ footer{padding:32px 0 48px;color:var(--ink-3);font-size:.9rem}
   </div>
 
   <div class="info">
-    <h2>What this test measures</h2>
-    <p>This is a classic <b>digit span</b> test — how many digits you can hold in short-term memory at once. Research going back to the 1950s puts the typical span around <b>7 ± 2 items</b> for most adults. Chunking (grouping digits the way you group phone numbers) is the main trick for pushing past it.</p>
-    <h2>Can you improve it?</h2>
-    <p>Digit span responds to practice — especially to learning chunking strategies and training consistently. That's exactly how Neuroo's Number Memory game works: it starts easy, adds a digit each level, tracks your best, and folds into a 3-minute daily plan alongside 14 other memory, focus, logic and reasoning games. <a href="/">Learn more about Neuroo</a>, or see how it <a href="/vs/lumosity">compares to Lumosity</a>.</p>
+    <h2>What is a number memory test?</h2>
+    <p>A number memory test measures your <b>digit span</b> — how many digits you can hold in short-term memory at once and repeat back correctly. The format above is the standard one: a number appears for a few seconds, disappears, and you type it from memory. Each round adds one more digit, so the test finds your ceiling rather than giving you a pass or fail.</p>
+    <p>It is one of the oldest measures in psychology and still appears as a subtest of the Wechsler Adult Intelligence Scale, where it is used to assess short-term and working memory.</p>
+
+    <h2>What is a good score on a number memory test?</h2>
+    <p>Because the typical span clusters tightly, the bands are narrow:</p>
+    <ul>
+      <li><b>5 or fewer</b> — below the usual range. Very often this is distraction rather than memory; try again somewhere quiet.</li>
+      <li><b>6 to 8</b> — where most adults land. This is the normal range, not a weak result.</li>
+      <li><b>9 to 11</b> — above typical. Most people scoring here are chunking, deliberately or not.</li>
+      <li><b>12 or more</b> — unusual, and almost always a learned strategy rather than raw recall.</li>
+    </ul>
+    <p>One caveat worth knowing: scores drift down when you are tired, rushed, or reading on a noisy screen. A single run is a rough estimate. Three runs on different days is a real number.</p>
+
+    <h2>What is the average digit span?</h2>
+    <p>About <b>seven</b>. The classic reference is George Miller's 1956 paper <i>The Magical Number Seven, Plus or Minus Two</i>, which put the span of immediate memory at roughly seven items for most adults — with normal variation of about two either side. That is where the familiar "seven digits" figure comes from, and it is also why phone numbers were originally seven digits long.</p>
+
+    <h2>How do I improve my number memory?</h2>
+    <p><b>Chunking</b> is the single biggest lever. Nobody remembers <i>4 8 2 9 1 6 3</i> as seven separate digits — they remember <i>482</i>, <i>916</i>, <i>3</i>. Grouping into twos or threes converts seven items into three, and three fits comfortably. Reading the digits in a rhythm, the way you say a phone number aloud, does the same job.</p>
+    <p>Beyond that, digit span responds to repetition: the more runs you do, the more automatic the grouping becomes. Gains show up fastest on the task you actually practise, so consistency matters more than session length — a few minutes daily beats an hour once a week.</p>
+
+    <h2>Does digit span measure IQ?</h2>
+    <p>Not on its own. Digit span is <i>part</i> of standardised IQ batteries, but it captures one narrow ability — short-term retention — rather than general intelligence. A high score means you hold sequences well. It does not predict reasoning, vocabulary, or problem-solving, and no single online test can give you an IQ.</p>
+
+    <h2>Practise it daily</h2>
+    <p>Neuroo's Number Memory game is this test with progress attached: it starts easy, adds a digit each level, records your best, and folds into a three-minute daily plan alongside 14 other memory, focus, logic and reasoning games. <a href="/">Learn more about Neuroo</a>, or see how it <a href="/vs/lumosity">compares to Lumosity</a>.</p>
   </div>
 </main>
 

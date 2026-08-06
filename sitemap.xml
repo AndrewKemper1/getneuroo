@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- lastmod is the one hint here Google actually acts on; changefreq and
+     priority are largely ignored. Dates come from each file's last commit —
+     bump the entry when you change a page, or the signal goes stale and
+     misleading. Every loc is the no-trailing-slash form: cleanUrls
+     308-redirects /vs/ to /vs, and a sitemap should point at a 200. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://getneuroo.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://getneuroo.com/memory-test</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://getneuroo.com/vs</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://getneuroo.com/vs/lumosity</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://getneuroo.com/vs/impulse</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://getneuroo.com/vs/elevate</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://getneuroo.com/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://getneuroo.com/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://getneuroo.com/support</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://getneuroo.com/</loc><lastmod>2026-07-29</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://getneuroo.com/memory-test</loc><lastmod>2026-08-05</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://getneuroo.com/vs</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://getneuroo.com/vs/lumosity</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://getneuroo.com/vs/impulse</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://getneuroo.com/vs/elevate</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://getneuroo.com/privacy</loc><lastmod>2026-07-24</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://getneuroo.com/terms</loc><lastmod>2026-07-24</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://getneuroo.com/support</loc><lastmod>2026-07-24</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
 </urlset>
