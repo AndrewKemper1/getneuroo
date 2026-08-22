@@ -9,22 +9,22 @@
     },
     {
       "source": "/youtube",
-      "destination": "https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966?ct=youtube_organic&mt=8",
+      "destination": "https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966?ppid=8d95a06b-9d96-4243-8fbb-e4a4f26be5b4&ct=youtube_organic&mt=8",
       "permanent": false
     },
     {
       "source": "/instagram",
-      "destination": "https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966?ct=instagram_organic&mt=8",
+      "destination": "https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966?ppid=8d95a06b-9d96-4243-8fbb-e4a4f26be5b4&ct=instagram_organic&mt=8",
       "permanent": false
     },
     {
       "source": "/facebook",
-      "destination": "https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966?ct=facebook_organic&mt=8",
+      "destination": "https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966?ppid=8d95a06b-9d96-4243-8fbb-e4a4f26be5b4&ct=facebook_organic&mt=8",
       "permanent": false
     },
     {
       "source": "/tiktok",
-      "destination": "https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966?ct=tiktok_organic&mt=8",
+      "destination": "https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966?ppid=8d95a06b-9d96-4243-8fbb-e4a4f26be5b4&ct=tiktok_organic&mt=8",
       "permanent": false
     }
   ]

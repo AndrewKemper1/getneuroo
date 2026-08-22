@@ -5,7 +5,7 @@
      misleading. Every loc is the no-trailing-slash form: cleanUrls
      308-redirects /vs/ to /vs, and a sitemap should point at a 200. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://getneuroo.com/</loc><lastmod>2026-07-29</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://getneuroo.com/</loc><lastmod>2026-08-22</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://getneuroo.com/memory-test</loc><lastmod>2026-08-05</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://getneuroo.com/vs</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://getneuroo.com/vs/lumosity</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
