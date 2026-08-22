@@ -1,4 +1,31 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/download",
+      "destination": "https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966?ct=site&mt=8",
+      "permanent": false
+    },
+    {
+      "source": "/youtube",
+      "destination": "https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966?ct=youtube_organic&mt=8",
+      "permanent": false
+    },
+    {
+      "source": "/instagram",
+      "destination": "https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966?ct=instagram_organic&mt=8",
+      "permanent": false
+    },
+    {
+      "source": "/facebook",
+      "destination": "https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966?ct=facebook_organic&mt=8",
+      "permanent": false
+    },
+    {
+      "source": "/tiktok",
+      "destination": "https://apps.apple.com/us/app/neuroo-brain-training-games/id6778620966?ct=tiktok_organic&mt=8",
+      "permanent": false
+    }
+  ]
 }
