@@ -1,10 +1,10 @@
 # Neuroo organic content system
 
-Updated 2026-08-22. The goal is not to make Neuroo look like a generic “brain test.” It is to show a small, satisfying daily habit: open the app, play a few quick games, and see progress build.
+Updated 2026-09-02. The goal is not to make Neuroo look like a generic “brain test.” It is to show a small, satisfying daily habit: open the app, play a few quick games, and see progress build.
 
 ## Link system
 
-Use a branded, human-readable URL everywhere. Do not paste an App Store URL into a caption or profile.
+Use a branded, human-readable URL only when a profile needs a clickable link. In spoken captions and on-screen CTAs, say “Find Neuroo on the iOS App Store” so the ask feels familiar and safe.
 
 | Channel | Public link | Apple campaign token |
 | --- | --- | --- |
@@ -13,8 +13,9 @@ Use a branded, human-readable URL everywhere. Do not paste an App Store URL into
 | Facebook | `getneuroo.com/facebook` | `facebook_organic` |
 | TikTok | `getneuroo.com/tiktok` | `tiktok_organic` |
 | Website / general | `getneuroo.com/download` | `site` |
+| Number Memory SEO page | `getneuroo.com/memory-test-download` | `memory_test` |
 
-These short routes redirect to the Organic Social Custom Product Page and keep the channel source in Apple’s campaign field. Keep the visible link exactly as written; the long App Store URL stays behind it.
+These short routes redirect to the Social Challenge Custom Product Page once it is approved and keep the channel source in Apple’s campaign field. Put the short route in the profile link field; use the spoken CTA “Find Neuroo on the iOS App Store” in the video and caption.
 
 ## Four content pillars
 
@@ -40,7 +41,7 @@ Post 4 short videos per week to YouTube Shorts, Instagram Reels, and Facebook Re
 
 **Hook:** “How many digits can you hold for three seconds?”
 
-Show a sequence, cut to the empty input, then reveal the answer. End with: “Neuroo has this plus 14 more quick brain training games. `getneuroo.com/youtube`.”
+Show a sequence, cut to the empty input, then reveal the answer. End with: “Neuroo has this plus 14 more quick brain training games. Find Neuroo on the iOS App Store.”
 
 ### 2. What’s Missing?
 
@@ -58,7 +59,7 @@ Screen-record one real attempt and overlay only the rules: “Guess → get clue
 
 **Hook:** “No hour-long brain workout—just today’s three games.”
 
-Show the daily plan, one quick beat from each game, and the completed workout. CTA: “Try the routine free at `getneuroo.com/instagram`.”
+Show the daily plan, one quick beat from each game, and the completed workout. CTA: “Try the routine free — find Neuroo on the iOS App Store.”
 
 ### 5. Chunking tip
 
@@ -74,7 +75,7 @@ Show the Brain Score screen and label the four inputs: consistency, variety, vol
 
 ## Caption template
 
-`Can you beat this one? [one-sentence challenge]. Neuroo is quick brain training games for memory, focus, logic & reasoning—built for a few minutes a day. Try it: getneuroo.com/[channel]`
+`Can you beat this one? [one-sentence challenge]. Neuroo is quick brain training games for memory, focus, logic & reasoning—built for a few minutes a day. Find Neuroo on the iOS App Store.`
 
 Use 3–5 specific hashtags, not a wall of tags: `#braintraining #memorygame #puzzlegame #focus #neuroo`.
 
@@ -85,7 +86,7 @@ Record this every Monday for the previous 7 days:
 - Views, 3-second views, average watch time, and completion rate per video.
 - Saves/shares and profile visits; these matter more than likes for this product.
 - Redirect visits by route (`/youtube`, `/instagram`, `/facebook`, `/tiktok`).
-- App Store Connect: product-page views, impressions, and app units by campaign token.
+- App Store Connect: product-page views, impressions, and app units by campaign token (`site`, `memory_test`, and each social channel).
 - GSC: clicks, impressions, CTR, and average position for `/`, `/memory-test`, and `/vs/lumosity`.
 - Firebase: `sign_up`, `game_started`, `game_completed`, `paywall_viewed`, `subscribe_tapped`, and `purchase_result`.
 
